@@ -38,7 +38,7 @@ article > blockquote::before{
   left: -17px;
   top: 0;
 }
-article > img { display: block; width: 1020px; margin: 79px auto 0;
+article > img { display: block; width: 960px; margin: 79px auto 0;
 }
 article > img + h2 { margin-top: 79px;
 }
