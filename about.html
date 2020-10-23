@@ -4,18 +4,61 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">">
     <title></title>
   </head>
   <style media="screen">
     body {
+      font-family: 'Roboto Mono', monospace;
+    }
+    h1, h2, h3, h4, p, ul, ol, blockquote, hr {
+      margin: 0 auto;
+      width: 800px;
+    }
+    img {
+      width: 960px;
+      margin: 0 auto;
+      display: block;
+    }
+    h1 {
+      font-size: 144px;
+      line-height: 60px;
+      margin-top: 271px;
+      margin-left: 584.5;
+      margin-bottom: 36px;
+      font-weight: regular;
+      color: #9F9;
+    }
+    h2 {
+      font-size: 45px;
+      line-height: 38px;
+      margin-top: 90px;
+      margin-bottom: 28px;
+      color: black;
+      font-weight: regular;
+    }
+    p {
+      font-size: 45px;
+      line-height: 34px;
+      margin-bottom: 52px;
+      color: #9F9;
+    }
+    body {
       width: 1440px;
       height: 100%;
-      display: block;
+      display:block;
       margin: 0 auto;
       position: relative;
-      background: white;
+      background: #9F9;
+      z-index: 0;
     }
-    body::before {
+    /* html {
+      background: #bbb;
+      height: 5639px;
+      position: relative;
+    } */
+    /* body::before {
       content: '';
       background: url('img/maket.jpg');
       opacity: .2;
@@ -25,23 +68,34 @@
       right: 0;
       height: 100%;
       z-index: 0;
-    }
+    } */
+    /* body::after {
+      content: '';
+      background: #9F9;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      z-index: 0;
+    } */
     html {
       background: #bbb;
-      height: 3253px;
+      height: 5639px;
       position: relative;
     }
     section {
       display: flex;
       justify-content: space-between;
-      /* align-items: center; */
+      align-items: center;
       vertical-align: top;
-      padding-top: 80px;
+      padding-top: 50px;
     }
     section div {
       overflow: hidden;
-      width: 50%;
-      padding-left: 40px;
+      width: 100%;
+      padding-left: 0px;
 
     }
     section h1
@@ -67,7 +121,42 @@
     section:nth-of-type(3) h1 {
       margin-top: 50px;
     }
-    .bottom_block {
+    .block_one img {
+      width: 1440px;
+      height: 100%;
+      align: center;
+    }
+    .block_one h1 {
+      margin-top: 250px;
+      margin-bottom: 250px;
+      padding-left: 462px;
+    }
+    .block_two {
+      background-image: url(img/2.jpg);
+      height: 960px;
+    }
+    .block_two h1 {
+      font-size: 144px;
+      text-align: center;
+      margin-top: 271px;
+      margin-left: 584.5px;
+      color: #9F9;
+    }
+    .block_two h2 {
+      font-size: 36px;
+      text-align: right;
+      color: black;
+      padding-right: 24px;
+    }
+    /* .black1 {
+      position: absolute;
+      width: 575px;
+      height: 46px;
+      left: 155px;
+      top:0;
+      background: black;
+    } */
+    /* .bottom_block {
       text-align: center;
       padding-top: 100px;
       border-top: 1px solid #bbb;
@@ -89,41 +178,54 @@
       color: white;
       background: black;
       border-color: black;
-    }
+    } */
   </style>
   <body>
-    <!-- <div class="menubar">
-      <a href="index.html"><img src="images/logo.svg" alt </a>
-      <a href="about.html">О проектe</a>
-    </div> -->
     <section>
-      <div>
-        <h2>Наглядный пример, <br>чтобы учиться веб-вёрстке</h2>
-        <p>Разработан для изучения основ веб-вёрстки, языка гиперткстовой разметки HTML и каскадных таблиц стилей CSS</p>
-      </div>
-        <img src="img/2.jpg" alt="">
-      <div>
+          <div>
+            <img src="img/2.jpg" alt="">
+          </div>
+    </section>
+  <section>
+    <div>
+
+    </div>
+  </section>
+    <section>
+          <div>
+            <!-- <p>Roboto Mono (робото моно)-<br>шрифтовая гарнитура без засечек,<br>представленная вместе<br>с операционной системой Android 4.0<br>"Ice Cream Sandwich".<br> Google описывает шрифт<br>как "современный, но доступный".</p> -->
+            <img src="img/4.jpg" alt="">
+          </div>
     </section>
     <section>
-      <div>
-      <img src="img/1.jpg" alt="">
-      </div>
+          <div>
+            <img src="img/5.jpg" alt="">
+          </div>
     </section>
     <section>
-      <div>
-        <img src="img/mmaket.jpg" alt="">
-      </div>
+          <div>
+            <img src="img/6.jpg" alt="">
+          </div>
     </section>
-    body::after {
-      content: '';
-      background: #9F9;
-      opacity: 0.1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      z-index: 0;
-    }
+    <section>
+          <div>
+            <img src="img/1.jpg" alt="">
+          </div>
+    </section>
+    <section>
+          <div>
+            <img src="img/7.jpg" alt="">
+          </div>
+    </section>
+    <section>
+          <div>
+            <img src="img/8.jpg" alt="">
+          </div>
+    </section>
+    <div>
+        <img src="img/3.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+    </div>
+    </section>
   </body>
 </html>
